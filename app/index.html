@@ -25,42 +25,219 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">glasschart</h3>
-      </div>
 
-      <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>HTML5 Boilerplate</h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          <h4>Sass</h4>
-          <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
-
-          <h4>Bootstrap</h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-          <h4>Modernizr</h4>
-          <p>Modernizr is an open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
-
+    <div class="wrapper">
+      <!-- navbar -->
+      <nav id="nav" class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-logo">
+            <a href="#">
+              <img class="image-responsive nav-logo" alt="Glasschart" src="/images/glasschart-symbol-v1.png">
+            </a>
+          </div>
+          <div class="navbar-menu">
+            <!-- <a href="#"> --><div id="hideshow" value="hide/show">
+              <img class="image-responsive nav-menu" alt="Glasschart" src="/images/hamburger.png">
+            <!-- </a> --></div>
+          </div>
+          <div class="collapse" id="content">
+            <ul class="menu-list active">
+              <li><a href="#glasschart">glasschart</a></li>
+              <li><a href="#smarthands">smarthands</a></li>
+              <li><a href="#team">Team</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#secret">Super Secret</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
+      <!-- end navbar -->
+      <!-- landing section -->
+      <section id="landing" data-spay"landing" data-target="#landing">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="/images/LogoAnim2-215 copy.mp4"></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1>A Platform for Smarter Healthcare</h1>
+          </div>
+        </div>
+      </section>
+      <!-- end landing section -->
 
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
-    </div>
+      <!-- glasschart section -->
+      <section id="glasschart" data-spay"glasschart" data-target="#glasschart">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img class="image-responsive glasschart-section-logo" src="/images/glasschart-logo-color.png">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-2 col-md-offset-2">
+            <div class="thumbnail">
+              <img class="glasschart-section-icon" src="/images/apple-watch.jpg">
+              <div class="caption">
+                <p>Smartwatch</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <br>
+            <br>
+            <br>
+            <span class="green-plus">+</span>  
+          </div>         
+          <div class="col-md-2">
+            <div class="thumbnail">
+              <img class="glasschart-section-icon" src="/images/ibeacon.png">
+              <div class="caption">
+                <p>Proximity Beacons</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <br>
+            <br>
+            <br>
+            <span class="blue-plus">+</span>  
+          </div>  
+          <div class="col-md-2">
+            <!-- <span class="yellow-plus">+</span> gonna try another way -->
+            <div class="thumbnail">
+              <img class="glasschart-section-icon" src="/images/psyc.png">
+              <div class="caption">
+                <p>Psychology</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <p class="glasschart-section-text">glasschart is a healthcare platform combining cutting edge mobile technologies with proven psychological methods for driving behavioral change to solve serious problems facing care providers</p>
+          </div>
+        </div>          
+      </section>
+      <!-- end glasschart section -->
+
+      <!-- smarthands section -->
+      <section id="smarthands" data-spy="smarthands" data-target="#smarthands">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img class="image-responsive smarthands-section-logo" src="/images/smarthands-logo.png">
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <img class="image-responsive smarthands-section-video" src="/images/big-ass-watch.png">
+          </div>
+        </div>
+      </section>
+      <!-- end smart hands section -->
+
+      <!-- team section -->
+      <section id="team" data-spay"team" data-target="#team">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1>Leadership</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img class="leadership-img eb-img" src="/images/eb.png">
+              <div class="caption text-center">
+                <h2>Eli M Blatt, PhD</h2>
+                <p>Co-Founder</p>
+                <p>President & Chief Product Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">            
+            <div class="thumbnail">
+              <img class="leadership-img nh-img" src="/images/nh.png">
+              <div class="caption text-center">
+                <h2>Nick Hutchins</h2>
+                <p>Co-Founder</p>
+                <p>Chief Executive Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <img class="leadership-img jm-img" src="/images/jm.jpg">
+              <div class="caption text-center">
+                <h2>Jeff Michels</h2>
+                <p>Co-Founder</p>
+                <p>Chief Technical Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2>Advisory Board</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-2">
+            <div class="thumbnail">
+              <img class="advisory-img" src="/images/jl.png">
+              <div class="caption text-center">
+                <p>Jeff Laretto, JD</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class="thumbnail">
+              <img class="advisory-img" src="/images/ja.png">
+              <div class="caption text-center">
+                <p>Jerome Aya-ay, MD</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-md-offset-1">
+            <div class="thumbnail">
+              <img class="advisory-img" src="/images/rp.png">
+              <div class="caption text-center">
+                <p>Richard Pocklington, PhD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end team section -->
+
+      <!-- secret section -->
+      <section id="secret" data-spay"secret" data-target="#secret">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1>Super Secret Password Protected page</h1>
+            <h2>Sorry, but you need a password to access content on this page</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <img class="image-responsive smarthands-section-video" src="/images/big-ass-watch.png">
+            
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-3 col-md-offset-2 col-xs-6">
+            <img class="image-responsive pdf-icon" src="/images/pdf-icon.png">
+          </div>
+          <div class="col-md-3 col-md-offset-2 col-xs-6">
+            <img class="image-responsive pdf-icon" src="/images/pdf-icon.png">
+          </div>
+        </div>
+      </section>
+      <!-- end secret section -->
+    </div><!-- end wrapper -->
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
