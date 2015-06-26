@@ -30,11 +30,14 @@ jQuery(document).ready(function(){
     });
   });
 
+  /// turn that manu hamburger
   var angle = 0;
-$("#hideshow").click(function(){
-    angle = (angle + 90) % 360;
-    $(".nav-menu").css("webkit-transform", "rotate(" + angle + "deg)");
-    console.log("sup")
-});
+  $("#hideshow").click(function(){
+      angle = (angle + 90) % 360;
+      $(".nav-menu").css("webkit-transform", "rotate(" + angle + "deg)");
+      console.log("sup")
+  });
+
+
 
 });

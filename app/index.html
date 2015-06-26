@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>glasschart</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- do not need all these - but you have them-->
     <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
@@ -30,6 +31,7 @@
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -53,7 +55,7 @@
           </div>
           <div class="navbar-menu">
             <!-- <a href="#"> --><div id="hideshow" value="hide/show">
-              <img class="image-responsive nav-menu" alt="Glasschart" src="/images/hamburger.png">
+              <img class="image-responsive nav-menu" alt="Glasschart" src="/images/glasschart-menu-icon.png">
             <!-- </a> --></div>
           </div>
           <div class="collapse" id="content">
@@ -73,8 +75,13 @@
         <div class="row">
           <div class="col-md-12">
             <!-- 16:9 aspect ratio -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="/images/LogoAnim2-215 copy.mp4"></iframe>
+<!--             <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="/videos/LogoAnim2-215 copy.mp4"></iframe>
+            </div> -->
+            <div align="center" class="embed-responsive embed-responsive-16by9">
+                <video autoplay loop class="embed-responsive-item">
+                    <source src="videos/LogoAnim2-215 copy.mp4" type="video/mp4" >
+                </video>
             </div>
           </div>
         </div>
@@ -96,7 +103,7 @@
         <div class="row text-center">
           <div class="col-md-2 col-md-offset-2">
             <div class="thumbnail">
-              <img class="glasschart-section-icon" src="/images/apple-watch.jpg">
+              <img class="glasschart-section-icon" src="/images/glasschart-apple-watch.png">
               <div class="caption">
                 <p>Smartwatch</p>
               </div>
@@ -165,7 +172,16 @@
         <div class="row">
           <div class="col-md-4">
             <div class="thumbnail">
-              <img class="leadership-img eb-img" src="/images/eb.png">
+              <div class="leadership-img-holder text-center">
+                <a href="https://www.linkedin.com/in/eblatt">
+                  <img class="leadership-img eb-img" src="/images/eb.png">
+                  <div class="leadership-hover">
+                    <span class="leadership-link">
+                      <i class="fa fa-linkedin fa-4x"></i>
+                    </span>
+                  </div>
+                </a>
+              </div>
               <div class="caption text-center">
                 <h2>Eli M Blatt, PhD</h2>
                 <p>Co-Founder</p>
@@ -175,7 +191,17 @@
           </div>
           <div class="col-md-4">            
             <div class="thumbnail">
-              <img class="leadership-img nh-img" src="/images/nh.png">
+              <div class="leadership-img-holder text-center">
+                <a href="https://www.linkedin.com/in/nhutchins">
+                  <img class="leadership-img nh-img" src="/images/nh.png">
+                  <div class="leadership-hover">
+                    <span class="leadership-link">
+                      <i class="fa fa-linkedin fa-4x"></i>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <!-- <img class="leadership-img nh-img" src="/images/nh.png"> -->
               <div class="caption text-center">
                 <h2>Nick Hutchins</h2>
                 <p>Co-Founder</p>
@@ -185,7 +211,17 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail">
-              <img class="leadership-img jm-img" src="/images/jm.jpg">
+              <div class="leadership-img-holder text-center">
+                <a href="https://www.linkedin.com/in/jeffmichels">
+                  <img class="leadership-img eb-img" src="/images/jm.jpg">
+                  <div class="leadership-hover">
+                    <span class="leadership-link">
+                      <i class="fa fa-linkedin fa-4x"></i>
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <!-- <img class="leadership-img jm-img" src="/images/jm.jpg"> -->
               <div class="caption text-center">
                 <h2>Jeff Michels</h2>
                 <p>Co-Founder</p>
@@ -245,9 +281,13 @@
         <div class="row text-center">
           <div class="col-md-3 col-md-offset-2 col-xs-6">
             <img class="image-responsive pdf-icon" src="/images/pdf-icon.png">
+            <p>Summary</p>
+            <p>Pitch Deck</p>
           </div>
           <div class="col-md-3 col-md-offset-2 col-xs-6">
             <img class="image-responsive pdf-icon" src="/images/pdf-icon.png">
+            <p>Executive</p>
+            <p>Summary</p>
           </div>
         </div>
       </section>
