@@ -32,12 +32,16 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="MyFontsWebfontsKit.css">
+    <!-- <link rel="stylesheet" href="styles/MyFontsWebfontsKit.css"> -->
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
+
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -54,47 +58,46 @@
             </a>
           </div>
           <div class="navbar-menu">
-            <!-- <a href="#"> --><div id="hideshow" value="hide/show">
+            <div id="hideshow" value="hide/show">
               <img class="image-responsive nav-menu" alt="Glasschart" src="/images/glasschart-menu-icon.png">
-            <!-- </a> --></div>
+            </div>
           </div>
           <div class="collapse" id="content">
             <ul class="menu-list active">
-              <li><a href="#glasschart">glasschart</a></li>
-              <li><a href="#smarthands">smarthands</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#secret">Super Secret</a></li>
+              <li class="text-right"><a href="#glasschart"><span class="glasschart-green">glass</span><span class="glasschart-blue">chart</span></a></li>
+              <li class="text-right"><a href="#smarthands"><span class="glasschart-purple">smart</span><span class="glasschart-orange">hands</span></a></li>
+              <li class="text-right"><a href="#team">Team</a></li>
+              <li class="text-right"><a href="#">Contact</a></li>
+              <li class="text-right"><a href="#secret">Super Secret</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- end navbar -->
       <!-- landing section -->
-      <section id="landing" data-spay"landing" data-target="#landing">
-        <div class="row">
+      <div id="landing" data-spy"landing" data-target="#landing">
+        <div class="row logo-row">
           <div class="col-md-12">
+            <div class="sizer">
             <!-- 16:9 aspect ratio -->
-<!--             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="/videos/LogoAnim2-215 copy.mp4"></iframe>
-            </div> -->
             <div align="center" class="embed-responsive embed-responsive-16by9">
-                <video autoplay loop class="embed-responsive-item">
-                    <source src="videos/LogoAnim2-215 copy.mp4" type="video/mp4" >
+                <video autoplay class="embed-responsive-item">
+                    <source src="videos/glasschart-logo-animated.mp4" type="video/mp4" >
                 </video>
+            </div>
             </div>
           </div>
         </div>
-        <div class="row text-center">
+        <div class="row tagline-row text-center">
           <div class="col-md-12">
-            <h1>A Platform for Smarter Healthcare</h1>
+            <h1>A <span class="glasschart-green">Platform</span> for <span class="glasschart-blue">Smarter</span> Healthcare</h1>
           </div>
         </div>
-      </section>
+      </div>
       <!-- end landing section -->
 
       <!-- glasschart section -->
-      <section id="glasschart" data-spay"glasschart" data-target="#glasschart">
+      <section id="glasschart" data-spy"glasschart" data-target="#glasschart">
         <div class="row text-center">
           <div class="col-md-12">
             <img class="image-responsive glasschart-section-logo" src="/images/glasschart-logo-color.png">
@@ -103,9 +106,9 @@
         <div class="row text-center">
           <div class="col-md-2 col-md-offset-2">
             <div class="thumbnail">
-              <img class="glasschart-section-icon" src="/images/glasschart-apple-watch.png">
+              <img class="img-responsive glasschart-section-icon" src="/images/glasschart-apple-watch.png">
               <div class="caption">
-                <p>Smartwatch</p>
+                <p class="glasschart-section-icon-text">Smartwatch</p>
               </div>
             </div>
           </div>
@@ -117,9 +120,9 @@
           </div>         
           <div class="col-md-2">
             <div class="thumbnail">
-              <img class="glasschart-section-icon" src="/images/ibeacon.png">
+              <img class="img-responsive glasschart-section-icon" src="/images/ibeacon.png">
               <div class="caption">
-                <p>Proximity Beacons</p>
+                <p class="glasschart-section-icon-text">Proximity Beacons</p>
               </div>
             </div>
           </div>
@@ -130,19 +133,20 @@
             <span class="blue-plus">+</span>  
           </div>  
           <div class="col-md-2">
-            <!-- <span class="yellow-plus">+</span> gonna try another way -->
             <div class="thumbnail">
-              <img class="glasschart-section-icon" src="/images/psyc.png">
+              <img class="img-responsive glasschart-section-icon" src="/images/psyc.png">
               <div class="caption">
-                <p>Psychology</p>
+                <p class="glasschart-section-icon-text">Psychology</p>
               </div>
             </div>
           </div>
         </div>
+        <div class="container">
         <div class="row text-center">
           <div class="col-md-12">
-            <p class="glasschart-section-text">The Smart Beacon™ platform by glasschart™ combines cutting edge mobile technologies with proven psychological methods for driving behavioral change to solve serious problems facing care providers</p>
+            <p class="glasschart-section-text">The Smart Beacon™ platform by <span class="glasschart-blue font-26">glass</span><span class="glasschart-green font-26">chart™</span> combines cutting edge mobile technologies with proven psychological methods for driving behavioral change to solve serious problems facing care providers</p>
           </div>
+        </div>
         </div>          
       </section>
       <!-- end glasschart section -->
@@ -154,22 +158,23 @@
             <img class="image-responsive smarthands-section-logo" src="/images/smarthands-logo.png">
           </div>
         </div>
-        <div class="row text-center">
-          <div class="col-md-12">
+        <div class="row text-center smarthands-section-video-row">
+          <!-- <div class="col-md-12"> -->
             <img class="image-responsive smarthands-section-video" src="/images/big-ass-watch.png">
-          </div>
+          <!-- </div> -->
         </div>
       </section>
       <!-- end smart hands section -->
 
       <!-- team section -->
-      <section id="team" data-spay"team" data-target="#team">
+      <section id="team" data-spy"team" data-target="#team">
         <div class="row text-center">
           <div class="col-md-12">
             <h1>Leadership</h1>
           </div>
         </div>
         <div class="row">
+          <!-- eli thumbnail -->
           <div class="col-md-4">
             <div class="thumbnail">
               <div class="leadership-img-holder text-center">
@@ -189,6 +194,7 @@
               </div>
             </div>
           </div>
+          <!-- nick thumbnail -->
           <div class="col-md-4">            
             <div class="thumbnail">
               <div class="leadership-img-holder text-center">
@@ -201,7 +207,6 @@
                   </div>
                 </a>
               </div>
-              <!-- <img class="leadership-img nh-img" src="/images/nh.png"> -->
               <div class="caption text-center">
                 <h2>Nick Hutchins</h2>
                 <p>Co-Founder</p>
@@ -209,6 +214,7 @@
               </div>
             </div>
           </div>
+          <!-- jeff thumbnail -->
           <div class="col-md-4">
             <div class="thumbnail">
               <div class="leadership-img-holder text-center">
@@ -221,7 +227,6 @@
                   </div>
                 </a>
               </div>
-              <!-- <img class="leadership-img jm-img" src="/images/jm.jpg"> -->
               <div class="caption text-center">
                 <h2>Jeff Michels</h2>
                 <p>Co-Founder</p>
@@ -265,16 +270,16 @@
       <!-- end team section -->
 
       <!-- secret section -->
-      <section id="secret" data-spay"secret" data-target="#secret">
+      <section id="secret" data-spy"secret" data-target="#secret">
         <div class="row text-center">
           <div class="col-md-12">
             <h1>Super Secret Password Protected page</h1>
-            <h2>Sorry, but you need a password to access content on this page</h2>
+            <h3 class="secret-section-undertext">Sorry, but you need a password to access content on this page</h3>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <img class="image-responsive smarthands-section-video" src="/images/big-ass-watch.png">
+          <div class="col-md-12 text-center">
+            <img class="image-responsive secret-section-video" src="/images/big-ass-watch.png">
             
           </div>
         </div>

@@ -4,6 +4,37 @@ $icon-font-path: '../fonts/';
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+
+.SofiaProExtraLight { 
+  font-family: SofiaProExtraLight;
+  font-weight: normal;
+  font-style: normal;
+}
+.SofiaProUltraLight { 
+  font-family: SofiaProUltraLight;
+  font-weight: normal;
+  font-style: normal;
+}
+.SofiaProLight { 
+  font-family: SofiaProLight;
+  font-weight: normal;
+  font-style: normal;
+}
+.SofiaProUltraLight-Italic { 
+  font-family: SofiaProUltraLight-Italic;
+  font-weight: normal;
+  font-style: normal;
+}
+.SofiaProRegular { 
+  font-family: SofiaProRegular;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: SofiaProRegular;
+}
+
 ///Colors
 $glasschart-blue: #0061AE;
 $glasschart-green: #33C133;
@@ -14,6 +45,34 @@ $glasschart-purple: #B2116D;
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+a {
+  color: #333333;
+}
+section {
+  padding: 60px 0px;
+  height: 100%;
+}
+
+// base styles
+.glasschart-blue {
+  color: $glasschart-blue;
+}
+
+.glasschart-green {
+  color: $glasschart-green;
+}
+
+.glasschart-orange {
+  color: $glasschart-orange;
+}
+
+.glasschart-purple {
+  color: $glasschart-purple;
+}
+
+.font-26 {
+  font-size: 26px;
 }
 
 // boostrap overides
@@ -40,16 +99,32 @@ body {
 
 .menu-list {
   float: right;
-  font-size: 18px;
+  font-size: 24px;
+}
+
+.nav-link {
+
 }
 
 ul {
   list-style-type: none;
 }
 
+// landing section
+.sizer {
+  height: 700px;
+  margin-top: -80px;
+  margin-bottom: -20px;
+}
+
+.tagline-row {
+  font-size: 36px;
+}
+
 /* glasschart section styles */
 .glasschart-section-logo {
   height: 200px;
+  margin-bottom: 40px;
 }
 
 img.glasschart-section-icon {
@@ -69,13 +144,27 @@ img.glasschart-section-icon {
   margin-top: 25%;
 }
 
+.glasschart-section-icon-text {
+  font-size: 20px;
+  color: #929292;
+}
+
+.glasschart-section-text {
+  font-size: 22px;
+}
+
 /*smarthands section styles */
 .smarthands-section-logo {
   width: 300px;
 }
 
 .smarthands-section-video {
-  width: 100%;
+  // width: 100%;
+  height: 600px;
+  margin-top: 10px; 
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 /* team section */
@@ -129,8 +218,17 @@ img.advisory-img {
 }
 
 /* secret section */
+.secret-section-undertext {
+  margin-top: -10px;
+}
+.secret-section-video {
+  height: 460px;
+  margin-bottom: 20px;
+  box-shadow: -5px 5px 5px 0px $glasschart-purple;
+
+}
 .pdf-icon {
-  height:100px;
+  height: 60px;
 }
 
 
