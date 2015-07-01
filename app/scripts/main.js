@@ -1,9 +1,16 @@
 /* jshint devel:true */
+'use strict';
 console.log('Welcome to Glasschart. Enjoy your visit.');
 
 
 $(document).ready(function(){
-	
+
+  //start fullpage plugin
+	$('#fullpage').fullpage({
+    paddingTop: '20px',
+    fixedElements: '#nav'
+  });
+
   // toggle the menu list items for navigation
   $('#hideshow').on('click', function(event) {        
 		$('#content').toggle('show');
