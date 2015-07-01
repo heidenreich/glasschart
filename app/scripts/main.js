@@ -17,6 +17,10 @@ $(document).ready(function(){
       fixedElements: '#nav',
       anchors: ['home', 'glasschart', 'smarthands', 'team', 'secret'],
       menu: '#nav',
+      scrollOverflow: false,
+      afterRender: function(){
+        $('#video')[0].play();      
+      }
     });
   }
   
