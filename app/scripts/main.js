@@ -6,38 +6,36 @@ console.log('Welcome to Glasschart. Enjoy your visit.');
 $(document).ready(function(){
 
   //start fullpage plugin
-	$('#fullpage').fullpage({
-    paddingTop: '20px',
-    fixedElements: '#nav'
-  });
+
+  if(screen.width < 480) { 
+    // do any 480 width stuff here, or simply do nothing
+    return;
+  } else {
+    // do all your cool stuff here for larger screens
+  	$('#fullpage').fullpage({
+      paddingTop: '20px',
+      fixedElements: '#nav',
+      anchors: ['home', 'glasschart', 'smarthands', 'team', 'secret'],
+      menu: '#nav',
+    });
+  }
+  
+
+  // make embedded videos responsive with fitvid plugin
+  $("#secret-section-video").fitVids();
 
   // toggle the menu list items for navigation
+  
+  $("#nav ul li a[href^='#']").on('click', function(e) {  
+    $('#content').toggle('show');
+  });
+
+
   $('#hideshow').on('click', function(event) {        
 		$('#content').toggle('show');
 	});
 
-  // smooth out the scroll when navigating on page
-  $("#nav ul li a[href^='#']").on('click', function(e) {
-
-    //clear out the nav list after nav click
-    $('#content').toggle('show');
-
-   // prevent default anchor click behavior
-    e.preventDefault();
-
-   // store hash
-    var hash = this.hash;
-
-   // animate
-    $('html, body').animate({
-       scrollTop: $(hash).offset().top + 40
-      }, 1000, function(){
-
-      // when done, add hash to url
-      // (default click behaviour)
-      window.location.hash = hash;
-    });
-  });
+ 
 
   // rotate hamburger back to original postion on navclick
   // set the angle to use in functions below

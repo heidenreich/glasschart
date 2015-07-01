@@ -57,7 +57,7 @@
       <nav id="nav" class="navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-logo">
-            <a href="#">
+            <a href="#home">
               <img class="image-responsive nav-logo" alt="Glasschart" src="images/glasschart-symbol-v1.png">
             </a>
           </div>
@@ -68,18 +68,19 @@
           </div>
           <div class="collapse" id="content">
             <ul class="menu-list active">
-              <li class="text-right"><a href="#glasschart"><span class="glasschart-green">glass</span><span class="glasschart-blue">chart</span></a></li>
-              <li class="text-right"><a href="#smarthands"><span class="glasschart-purple">smart</span><span class="glasschart-orange">hands</span></a></li>
-              <li class="text-right"><a href="#team">Team</a></li>
+              <li data-menuanchor="glasschart"class="text-right"><a href="#glasschart"><span class="glasschart-green">glass</span><span class="glasschart-blue">chart</span></a></li>
+              <li data-menuanchor="smarthands"class="text-right"><a href="#smarthands"><span class="glasschart-purple">smart</span><span class="glasschart-orange">hands</span></a></li>
+              <li data-menuanchor="team" class="text-right"><a href="#team">Team</a></li>
               <li class="text-right"><a href="#">Contact</a></li>
-              <li class="text-right"><a href="#secret">Super Secret</a></li>
+              <li data-menuanchor="secret" class="text-right"><a href="#secret">Super Secret</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- end navbar -->
       <!-- landing section -->
-      <div id="landing" data-spy"landing" data-target="#landing" class="section active">
+      <!-- <div id="landing" data-spy"landing" data-target="#landing" class="section active"> -->
+      <div id="section0" data-anchor="#home" class="landing-section section">
         <div class="row logo-row">
           <div class="col-md-12">
             <div class="sizer">
@@ -101,7 +102,7 @@
       <!-- end landing section -->
 
       <!-- glasschart section -->
-      <section id="glasschart" data-spy"glasschart" data-target="#glasschart" class="section">
+      <section id="section1" data-anchor="#glasschart" class="glasschart-section section">
         <div class="row text-center">
           <div class="col-md-12">
             <img class="image-responsive glasschart-section-logo" src="images/glasschart-logo-color.png">
@@ -156,7 +157,8 @@
       <!-- end glasschart section -->
 
       <!-- smarthands section -->
-      <section id="smarthands" data-spy="smarthands" data-target="#smarthands" class="section">
+      <!-- <section id="smarthands" data-spy="smarthands" data-target="#smarthands" class="section"> -->
+      <section id="section2" data-anchor="#smarthands" class="smarthands-section section">
         <div class="row text-center">
           <div class="col-md-12">
             <img class="image-responsive smarthands-section-logo" src="images/smarthands-logo.png">
@@ -171,7 +173,8 @@
       <!-- end smart hands section -->
 
       <!-- team section -->
-      <section id="team" data-spy"team" data-target="#team" class="section">
+      <!-- <section id="team" data-spy"team" data-target="#team" class="section"> -->
+      <section id="section3" data-anchor="#team" class="team-section section">
         <div class="row text-center">
           <div class="col-md-12">
             <h1>Leadership</h1>
@@ -274,7 +277,8 @@
       <!-- end team section -->
 
       <!-- secret section -->
-      <section id="secret" data-spy"secret" data-target="#secret" class="section">
+      <!-- <section id="secret" data-spy"secret" data-target="#secret" class="section"> -->
+      <section id="section4" data-anchor="#secret" class="secret-section section">
         <div class="row text-center">
           <div class="col-md-12">
             <h1>Super Secret Password Protected page</h1>
@@ -284,6 +288,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <img class="image-responsive secret-section-video" src="images/big-ass-watch.png">
+            <!-- <div id="secret-section-video"><img src="images/big-ass-watch.png"></div> -->
           </div> <!-- end col -->
         </div> <!-- end row -->
         <div class="row text-center">
@@ -334,6 +339,7 @@
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/collapse.js"></script>
         <script src="/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js"></script>
         <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+        <script src="/bower_components/FitVids/jquery.fitvids.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
