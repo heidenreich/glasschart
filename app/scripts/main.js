@@ -47,6 +47,4 @@ $(document).ready(function(){
       $(".nav-menu").css("webkit-transform", "rotate(" + angle + "deg)");
   });
 
-
-
 });

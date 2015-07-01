@@ -5,6 +5,7 @@ var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('styles', function () {
   return gulp.src('app/styles/main.scss')
@@ -56,12 +57,22 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('videos', function () {
+  return gulp.src('app/videos/**/*')
+    .pipe(gulp.dest('dist/videos'));
+});
+
+gulp.task('favicons', function () {
+  return gulp.src('app/favicons/**/*')
+    .pipe(gulp.dest('dist/favicons'));
+});
+
 gulp.task('fonts', function () {
   return gulp.src(require('main-bower-files')({
     filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
-    .pipe(gulp.dest('.tmp/fonts'))
-    .pipe(gulp.dest('dist/fonts'));
+  }).concat('app/styles/webfonts/**/*'))
+    .pipe(gulp.dest('.tmp/styles/webfonts'))
+    .pipe(gulp.dest('dist/styles/webfonts'));
 });
 
 gulp.task('extras', function () {
@@ -118,10 +129,18 @@ gulp.task('wiredep', function () {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['jshint', 'html', 'images', 'fonts', 'extras'], function () {
+gulp.task('build', ['html', 'images', 'videos', 'favicons', 'fonts', 'extras'], function () {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
 gulp.task('default', ['clean'], function () {
   gulp.start('build');
+});
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(ghPages());
 });

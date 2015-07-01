@@ -224,8 +224,9 @@ img.advisory-img {
 .secret-section-video {
   height: 460px;
   margin-bottom: 20px;
-  box-shadow: -5px 5px 5px 0px $glasschart-purple;
-
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 .pdf-icon {
   height: 60px;
