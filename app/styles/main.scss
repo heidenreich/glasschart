@@ -51,7 +51,7 @@ a {
 }
 section {
   padding: 60px 0px;
-  height: 100%;
+  // height: 100%;
 }
 
 // base styles
@@ -112,9 +112,11 @@ ul {
 
 // landing section
 .sizer {
-  height: 700px;
-  margin-top: -80px;
-  margin-bottom: -20px;
+  @media  (min-width: 1200px) {
+    height: 700px;
+    margin-top: -80px;
+    margin-bottom: -20px;
+  }
 }
 
 .tagline-row {
@@ -183,9 +185,6 @@ a > img.leadership-img {
   color: $glasschart-green;
 }
 
-.eb-img {
-  border: 3px solid $glasschart-orange;
-}
 
 .leadership-hover {
   display: none;
@@ -203,6 +202,11 @@ a > img.leadership-img {
 .leadership-img:hover + .leadership-hover {
     display: block;
 }
+
+.eb-img {
+  border: 3px solid $glasschart-orange;
+}
+
 .nh-img {
   border: 3px solid $glasschart-blue;
 }

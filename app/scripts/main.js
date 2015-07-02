@@ -6,9 +6,10 @@ console.log('Welcome to Glasschart. Enjoy your visit.');
 $(document).ready(function(){
 
   //start fullpage plugin
-
-  if(screen.width < 480) { 
+  if (Modernizr.mq('only screen and (max-width: 992px)')) { 
+  // if(screen.width < 992) { 
     // do any 480 width stuff here, or simply do nothing
+    console.log("screen is less than 992")
     return;
   } else {
     // do all your cool stuff here for larger screens
