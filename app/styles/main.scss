@@ -82,11 +82,13 @@ section {
 
 /* Nav styles */
 .navbar-fixed-top {
-  top: 10px;
+  // top: 10px;
+  background-color: #fff;
 }
 
 .navbar-logo {
   display: inline-block;
+  margin-top: 10px;
 }
 .nav-logo {
   height: 50px;
@@ -95,6 +97,7 @@ section {
 .navbar-menu {
   display: inline-block;
   float: right;
+  margin-top: 10px;
 }
 
 .menu-list {

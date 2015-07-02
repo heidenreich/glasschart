@@ -6,14 +6,15 @@ console.log('Welcome to Glasschart. Enjoy your visit.');
 $(document).ready(function(){
 
   //start fullpage plugin
-  if (Modernizr.mq('only screen and (max-width: 992px)')) { 
+  // if (Modernizr.mq('only screen and (max-width: 992px)')) { 
   // if(screen.width < 992) { 
     // do any 480 width stuff here, or simply do nothing
-    console.log("screen is less than 992")
-    return;
-  } else {
+    // console.log("screen is less than 992")
+    // return;
+  // } else {
     // do all your cool stuff here for larger screens
   	$('#fullpage').fullpage({
+      responsiveWidth: 992,
       paddingTop: '20px',
       fixedElements: '#nav',
       anchors: ['home', 'glasschart', 'smarthands', 'team', 'secret'],
@@ -23,7 +24,7 @@ $(document).ready(function(){
         $('#video')[0].play();      
       }
     });
-  }
+  // }
   
 
   // make embedded videos responsive with fitvid plugin
@@ -51,10 +52,11 @@ $(document).ready(function(){
   });
 
   /// turn that menu hamburger on click
-  // var angle = 0;
+
   $("#hideshow").click(function(){
       angle = (angle + 90) % 360;
       $(".nav-menu").css("webkit-transform", "rotate(" + angle + "deg)");
+      console.log("clicked hamburger")
   });
 
 });
