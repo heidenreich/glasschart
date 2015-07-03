@@ -50,8 +50,11 @@ a {
   color: #333333;
 }
 section {
-  padding: 60px 0px;
+  padding: 60px 10px;
   // height: 100%;
+  @media (max-width: 992px) {
+    margin-top: 60px;
+  }
 }
 
 // base styles
@@ -83,7 +86,7 @@ section {
 /* Nav styles */
 .navbar-fixed-top {
   // top: 10px;
-  background-color: #fff;
+  //background-color: #fff;
 }
 
 .navbar-logo {
@@ -103,6 +106,10 @@ section {
 .menu-list {
   float: right;
   font-size: 24px;
+  background-color: rgba(255,255,255, 0.9);
+  padding-left: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px; 
 }
 
 .nav-link {
@@ -124,6 +131,7 @@ ul {
 
 .tagline-row {
   font-size: 36px;
+  padding: 0px 10px;
 }
 
 /* glasschart section styles */
